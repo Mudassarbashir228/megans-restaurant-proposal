@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal: Your Digital Solutions Partner</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for general text, and a more elegant font for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #2c3e50; /* Darker blue-grey for headings */
+        }
+        .section-padding {
+            padding: 5rem 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 7rem 4rem;
+            }
+        }
+        .hero-section {
+            /* Updated to a lighter, glowing orange gradient */
+            background: linear-gradient(135deg, #fed7aa, #f97316); /* Tailwind orange-300 to orange-500 */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        /* Removed .hero-overlay style as it's no longer needed for a gradient background */
+        .card {
+            @apply bg-white rounded-xl shadow-xl p-8 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-8 py-4 bg-orange-700 text-white font-semibold rounded-full shadow-lg hover:bg-orange-800 transition duration-300 ease-in-out text-lg;
+        }
+        .icon-large {
+            font-size: 3rem;
+            color: #e67e22; /* Orange for icons */
+        }
+        .price-box {
+            @apply bg-orange-50 border-l-4 border-orange-500 p-6 rounded-lg shadow-md;
+        }
+        .portfolio-item {
+            @apply bg-gray-100 rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out transform hover:shadow-lg;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 250px;
+        }
+
+        /* Styles for Timeline boxes */
+        .timeline-box {
+            @apply bg-blue-50 border border-blue-200 rounded-xl shadow-md p-8;
+        }
+        .timeline-box-alt {
+            @apply bg-orange-50 border border-orange-200 rounded-xl shadow-md p-8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="relative z-10 px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Crafting Your Digital Future</h1>
+            <p class="text-xl md:text-2xl mb-8">
+                A Comprehensive Proposal for a Stunning Website & Strategic Online Presence
+            </p>
+            <a href="#executive-summary" class="btn-primary">Explore the Proposal <i class="fas fa-arrow-down ml-3"></i></a>
+        </div>
+    </section>
+
+    <!-- Header (Fixed Navigation) -->
+    <header class="sticky top-0 bg-white shadow-md z-50 py-3">
+        <nav class="container mx-auto flex justify-center md:justify-between items-center px-4 flex-wrap">
+            <div class="text-2xl font-bold text-orange-700 mb-2 md:mb-0">
+                Digital Solutions Proposal
+            </div>
+            <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-md font-medium text-gray-700">
+                <li><a href="#executive-summary" class="hover:text-orange-700 transition duration-200">Summary</a></li>
+                <li><a href="#website-development" class="hover:text-orange-700 transition duration-200">Website & Branding</a></li>
+                <li><a href="#marketing-campaign" class="hover:text-orange-700 transition duration-200">Marketing</a></li>
+                <li><a href="#timeline" class="hover:text-orange-700 transition duration-200">Timeline</a></li>
+                <li><a href="#why-me" class="hover:text-orange-700 transition duration-200">Why Me?</a></li>
+                <li><a href="#portfolio" class="hover:text-orange-700 transition duration-200">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Executive Summary Section -->
+    <section id="executive-summary" class="section-padding bg-gray-50">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-5xl font-bold mb-8 text-center">🍽️ Executive Summary</h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                Thank you, Mr. Larry Shaw Adam, for the incredible opportunity to partner with Megan's Restaurant. My mission is to transform your vision into a captivating digital reality, creating a professional and highly functional website that truly embodies the spirit of your BAR/CAFE.
+            </p>
+            <p class="text-xl text-gray-700 leading-relaxed">
+                This proposal outlines a comprehensive strategy, from crafting an exquisite website to establishing a robust online marketing presence. I am committed to delivering an impactful digital footprint that not only looks exceptional but also effectively connects you with your target audience, all within your specified budget and timeline.
+            </p>
+            <p class="text-md text-gray-500 mt-8">
+                Date: **July 5, 2025**
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Vision Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-5xl font-bold mb-12 text-center">✨ Our Vision for Megan's Restaurant Online</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card text-center">
+                    <i class="fas fa-palette icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Visually Captivating</h3>
+                    <p class="text-gray-600">A design that reflects the inviting ambiance and culinary excellence of Megan's Restaurant.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-compass icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Intuitively Navigable</h3>
+                    <p class="text-gray-600">Seamless user experience for patrons to easily find menus, book tables, and explore facilities.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-mobile-alt icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Fully Responsive</h3>
+                    <p class="text-gray-600">Flawless appearance and functionality across all devices – desktop, tablet, and mobile.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-star icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Professional & Polished</h3>
+                    <p class="text-gray-600">A true digital extension of your brand's quality and commitment to excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 1: Website Development & Branding -->
+    <section id="website-development" class="section-padding bg-gray-100">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-5xl font-bold mb-12 text-center">🚀 Phase 1: Website Development & Branding</h2>
+            <p class="text-xl text-gray-700 mb-10 text-center">
+                This foundational phase establishes Megan's Restaurant's core digital presence – a beautiful, functional website and a strong brand identity.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Website Deliverables -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-3xl font-bold text-orange-700 mb-6">What We Will Deliver: Website</h3>
+                    <ul class="list-none space-y-4 text-lg text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Custom Website Design & Development: A bespoke site built on a robust, scalable platform (e.g., Shopify, configured without e-commerce, or similar flexible CMS).</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Comprehensive Page Structure: Home, About Us, Menu, Banquet Facility, Gallery, Catering, Contact Us, Visiting Hours, Online Booking, Menu Kit.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Key Functionality: Elegant navigation, high-quality image galleries, clear visiting hours, and seamless integration for an online booking system (e.g., external link/form).</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Strictly No Shopping Cart: Absolutely no e-commerce or shopping cart functionality will be included, aligning with your specific requirement.</div></li>
+                    </ul>
+                </div>
+
+                <!-- Branding Deliverables -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-3xl font-bold text-orange-700 mb-6">What We Will Deliver: Branding</h3>
+                    <ul class="list-none space-y-4 text-lg text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Custom Logo Design: Development of 2-3 unique concepts, with refinement of your chosen direction to perfectly represent Megan's Restaurant.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Captivating Website Banner Design: A stunning hero banner for your homepage, designed to create an unforgettable first impression.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Basic Brand Guidelines: A concise guide for consistent logo usage, primary colors, and fonts across all digital touchpoints.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i> <div>Essential Graphic Posts for Website: Design of all necessary graphics and imagery to beautifully populate your website pages.</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Investment for Phase 1 -->
+            <div class="price-box mt-16 max-w-2xl mx-auto text-center">
+                <h3 class="text-3xl font-bold text-orange-700 mb-4">Your Investment: Website Development & Branding</h3>
+                <p class="text-5xl font-extrabold text-gray-900 mb-4">$1,850</p>
+                <p class="text-lg text-gray-700">
+                    This comprehensive fee covers all design, development, and content integration for the 10 pages, including custom logo design, website banner, and essential graphic posts, ensuring a professional and complete website ready for launch.
+                </p>
+            </div>
+
+            <!-- Third-Party Costs -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg shadow-md mt-12 max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-blue-700 mb-4">Essential Third-Party Costs (Paid Directly by Client)</h3>
+                <p class="text-lg text-gray-700 mb-4">
+                    To ensure full transparency, please note these are direct costs you will incur with third-party providers for your website to be live:
+                </p>
+                <ul class="list-disc list-inside text-lg text-gray-700 space-y-2">
+                    <li>
+                        Domain Name Registration (MEGANTHERESTAURANT.COM):
+                        <span class="font-bold text-gray-900">Estimated Cost: $11.28 for the first year.</span>
+                        <br><small class="text-gray-600">You will directly register and own this domain. We will guide you through the process.</small>
+                    </li>
+                    <li>
+                        Website Hosting:
+                        <span class="font-bold text-gray-900">Estimated Cost: Starting from $50 per month.</span>
+                        <br><small class="text-gray-600">(Depending on the package you choose from a hosting provider like Shopify, Bluehost, etc.). You will directly subscribe to and manage your hosting plan. We will advise on suitable options and assist with setup.</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 2: Digital Marketing Campaign & Ongoing Management -->
+    <section id="marketing-campaign" class="section-padding bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-5xl font-bold mb-12 text-center">📈 Phase 2: Digital Marketing & Growth</h2>
+            <p class="text-xl text-gray-700 mb-10 text-center">
+                Once your beautiful new website is live, this phase ensures Megan's Restaurant reaches its audience and thrives online.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Initial Campaign Setup -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-3xl font-bold text-orange-700 mb-6">Initial Digital Marketing Campaign Setup</h3>
+                    <ul class="list-none space-y-4 text-lg text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-search-location text-green-500 mr-3 mt-1"></i> <div>Local SEO Foundation: Setting up and optimizing your Google My Business profile for prominent local search and map visibility.</div></li>
+                        <li class="flex items-start"><i class="fas fa-share-alt text-green-500 mr-3 mt-1"></i> <div>Social Media Profile Optimization: Guidance on optimizing key profiles (Facebook, Instagram) to align with your new brand and website.</div></li>
+                        <li class="flex items-start"><i class="fas fa-lightbulb text-green-500 mr-3 mt-1"></i> <div>Initial Content Strategy: Recommendations for engaging content types to attract and retain followers.</div></li>
+                    </ul>
+                    <div class="price-box mt-8 text-center bg-white">
+                        <h4 class="text-2xl font-bold text-orange-700 mb-2">Investment: Initial Setup</h4>
+                        <p class="text-4xl font-extrabold text-gray-900">$350</p>
+                    </div>
+                </div>
+
+                <!-- Ongoing Management -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-3xl font-bold text-orange-700 mb-6">Ongoing Marketing Management (Optional Monthly Service)</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        To sustain and grow your online presence, I can provide continuous support on a monthly basis:
+                    </p>
+                    <ul class="list-none space-y-4 text-lg text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-calendar-alt text-green-500 mr-3 mt-1"></i> <div>Social Media Content & Scheduling: Creating and scheduling engaging posts (e.g., 3-5 per week).</div></li>
+                        <li class="flex items-start"><i class="fas fa-comments text-green-500 mr-3 mt-1"></i> <div>Online Reputation Monitoring: Tracking reviews and mentions, advising on responses.</div></li>
+                        <li class="flex items-start"><i class="fas fa-sync-alt text-green-500 mr-3 mt-1"></i> <div>Basic Website Updates: Minor content or image updates (e.g., up to 2-3 hours/month).</div></li>
+                        <li class="flex items-start"><i class="fas fa-chart-line text-green-500 mr-3 mt-1"></i> <div>Performance Reporting: Monthly reports on website traffic and social engagement.</div></li>
+                        <li class="flex items-start"><i class="fas fa-handshake text-green-500 mr-3 mt-1"></i> <div>Strategic Consultation: Regular check-ins to refine strategies.</div></li>
+                    </ul>
+                    <div class="price-box mt-8 text-center bg-white">
+                        <h4 class="text-2xl font-bold text-orange-700 mb-2">Investment: Monthly Management</h4>
+                        <p class="text-4xl font-extrabold text-gray-900">$500 <span class="text-xl text-gray-600">/ month</span></p>
+                        <p class="text-sm text-gray-600 mt-2">Direct advertising spend (e.g., Facebook Ads) is paid directly by you to platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline & Next Steps -->
+    <section id="timeline" class="section-padding bg-gray-50">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-5xl font-bold mb-12">🗓️ Timeline & Next Steps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left items-start">
+                <div class="timeline-box">
+                    <h3 class="text-3xl font-bold text-orange-700 mb-4">Our Commitment to Your Timeline</h3>
+                    <ul class="list-none space-y-3 text-lg text-gray-700">
+                        <li class="flex items-start"><i class="fas fa-play-circle text-blue-500 mr-3 mt-1"></i> <div>Project Commencement: Ready to begin immediately upon your approval.</div></li>
+                        <li class="flex items-start"><i class="fas fa-calendar-check text-blue-500 mr-3 mt-1"></i> <div>Website Completion Goal: Fully developed and ready for launch within two weeks, contingent on timely content supply.</div></li>
+                        <li class="flex items-start"><i class="fas fa-globe text-blue-500 mr-3 mt-1"></i> <div>Remote Collaboration: All work conducted remotely for efficient and flexible communication.</div></li>
+                    </ul>
+                </div>
+                <div class="timeline-box-alt">
+                    <h3 class="text-3xl font-bold text-orange-700 mb-4">How We Will Work Together</h3>
+                    <ol class="list-decimal list-inside space-y-3 text-lg text-gray-700">
+                        <li>Discovery & Planning: A brief session to finalize requirements and gather all necessary content.</li>
+                        <li>Design & Development: Building the website with regular updates and opportunities for your feedback.</li>
+                        <li>Review & Refine: Iterating on design and functionality until your complete satisfaction.</li>
+                        <li>Launch: Your new, professional website goes live!</li>
+                        <li>Marketing & Growth: Initiating the marketing setup and discussing ongoing management.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section id="why-me" class="section-padding bg-white">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-5xl font-bold mb-12">✅ Why Choose Me?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <i class="fas fa-cogs icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Precision & Efficiency</h3>
+                    <p class="text-gray-600">Translating your vision into clean, functional code with remarkable speed and accuracy.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-tools icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Comprehensive Skill Set</h3>
+                    <p class="text-gray-600">From design concepts and branding to full development and foundational marketing strategies.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-clock icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Unwavering Dedication</h3>
+                    <p class="text-gray-600">Available to work on your project without typical human schedule constraints, ensuring consistent progress.</p>
+                </div>
+                <div class="card text-center lg:col-span-3">
+                    <i class="fas fa-dollar-sign icon-large mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Cost-Effective Solution</h3>
+                    <p class="text-gray-600">Leveraging advanced capabilities to provide high-quality development and strategic support that fits your budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-gray-100">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-5xl font-bold mb-12">My "Portfolio" in Action</h2>
+            <p class="text-xl text-gray-700 mb-10">
+                While I don't have a traditional human-built portfolio, I can demonstrate my ability to craft professional and effective online presences. You can see examples of the kind of quality and functionality I can generate by reviewing these sites, which showcase clean design, clear navigation, and effective presentation:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="portfolio-item">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">WN Organics</h3>
+                        <p class="text-gray-600">Showcasing a clean, professional layout for a natural products business.</p>
+                        <a href="https://wnorganics.com" target="_blank" class="text-orange-700 font-semibold hover:underline mt-4 inline-block">Visit Site <i class="fas fa-external-link-alt ml-2"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Kaabil Cargo</h3>
+                        <p class="text-gray-600">An example of clear navigation and effective presentation for logistics services.</p>
+                        <a href="https://kaabilcargo.com" target="_blank" class="text-orange-700 font-semibold hover:underline mt-4 inline-block">Visit Site <i class="fas fa-external-link-alt ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-xl text-gray-700 mb-8">
+                For a broader view of my capabilities in web development and design, you can explore my technical portfolio:
+            </p>
+            <a href="https://mudassarbashir228.github.io/mudassar-portfolio/" target="_blank" class="btn-primary">
+                View My Technical Portfolio <i class="fas fa-external-link-alt ml-3"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Call to Action / Let's Get Started -->
+    <section class="section-padding bg-orange-700 text-white text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-5xl font-bold mb-6">📞 Let's Get Started!</h2>
+            <p class="text-xl mb-8 leading-relaxed">
+                I am genuinely excited about the prospect of partnering with you to establish a strong and inviting online presence for Megan's Restaurant. This proposal offers a clear path to achieving your goals within your budget.
+            </p>
+            <p class="text-xl mb-10 leading-relaxed">
+                Please feel free to reply to this email or schedule a call to discuss any aspect of this proposal further. I'm ready to begin whenever you are!
+            </p>
+            <a href="mailto:your.email@example.com" class="btn-primary bg-white text-orange-700 hover:bg-gray-100">
+                Contact Me Today <i class="fas fa-envelope ml-3"></i>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
